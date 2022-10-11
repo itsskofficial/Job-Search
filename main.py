@@ -27,5 +27,5 @@ for li in allis:
     li.click()
     savebtn=driver.find_element_by_css_selector('.artdeco-button--3, .artdeco-button--4')
     savebtn.click()
-    sleep(2)
+    driver.implicitly_wait(10) 
 driver.quit()
